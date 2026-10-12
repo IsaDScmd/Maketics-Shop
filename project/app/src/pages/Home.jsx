@@ -172,9 +172,15 @@ export default function Home() {
                     </div>
 
                     <div className="icons">
-                        <Link className="user-icon" onClick={handleClickUserIcon}><img src="images/icons8-user-64.png" /></Link>
-                        <Link className="heart-icon" onClick={handleClickHeartIcon}><img src="images/icons8-heart-50.png" /></Link>
-                        <Link className="cart-icon" onClick={handleClickCartIcon}><img src="images/icons8-shopping-trolley-64.png" /></Link>
+                        <Link className="user-icon" onClick={handleClickUserIcon}>
+                            <img src="/images/icons8-user-64.png" />
+                        </Link>
+                        <Link className="heart-icon" onClick={handleClickHeartIcon}>
+                            <img src="/images/icons8-heart-50.png" />
+                        </Link>
+                        <Link className="cart-icon" onClick={handleClickCartIcon}>
+                            <img src="/images/icons8-shopping-trolley-64.png" />
+                        </Link>
                     </div>
                 </div>
             </section>
