@@ -10,7 +10,7 @@ export default function updateCartItemQuantity(productId, orderId, quantityProdu
         method: 'PATCH'
     }
 
-    return fetch(`http://localhost:9000/cart/update/${productId}/${orderId}/${quantityProduct}`, req)
+    return fetch(`https://maketics-shop.onrender.com/cart/update/${productId}/${orderId}/${quantityProduct}`, req)
         .catch(error => { throw new SystemError(error.message) })
         .then(res => {
             if (!res.ok) {
