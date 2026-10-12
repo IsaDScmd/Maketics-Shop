@@ -1,74 +1,86 @@
-# Maketics Shop
+# 💜 Maketics Shop
 
-## Intro
-Maketics is an e-commerce that offers the experience of creating your own beauty products from the comfort of your home. You'll be able to find ingredients from essential oils to organic butters and tools and materials to help you with their preparation. There is also a recipe section where you can follow the preparation step by step.
+### A full-stack e-commerce application for DIY cosmetics
 
-![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGl5dXB2NGIwN2N0c2s1M2cxNW9iMmlxbzJkeWxrZXlvbWN4YXh0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UkywKrH8teJYA/giphy.gif)
+Maketics Shop is a full-stack web application designed for people who enjoy creating their own beauty and skincare products at home.
 
-## Functional Description
+Users can explore natural ingredients, cosmetic packaging, tools and DIY recipes, as well as manage their favourite products and complete purchases through an online shopping experience.
 
-Browse, shop and create your own homemade beauty products.
+**[🌐 Live Demo](https://maketics-shop-frontend.onrender.com)**
 
-### Use Cases
+## ✨ Project Preview
 
-Anonymous users:
+![Maketics Shop – Illustrative catalogue design](project/screenshots/raw-material.png)
 
-- Visualize the products and recipes in the store.
-- View details of a product.
-- Visualize recipe preparation.
+*Illustrative design concept inspired by Maketics Shop. The live application may differ from this preview.*
 
-Registered user:
+## 🛍️ Features
 
-- Visualize the products and recipes in the store.
-- View details of a product.
-- Visualize recipe preparation.
-- Visualize orders and wishlist.
-- Add/remove product from wishlist.
-- Add/remove product from cart.
-- Add/remove product units in the cart.
-- Make a purchase. 
-- Profile management (delete account, change password and email) (v.2.0)
-- Reviews (v.2.0)
+### Guest Users
+- Browse the product catalogue.
+- Explore DIY cosmetic recipes.
+- View product details and descriptions.
+- Discover ingredients, packaging and cosmetic tools.
 
+### Registered Users
+- Register and log in.
+- Add and remove products from their wishlist.
+- Add products to their shopping cart.
+- Update product quantities or remove items from the cart.
+- Complete the checkout process.
+- Access their orders.
 
-## Technical Description
+## 🛠️ Tech Stack
 
-### Data Model
+| Layer | Technologies |
+|---|---|
+| Frontend | React, JavaScript, HTML5, CSS3, Vite |
+| Backend | Node.js, Express.js |
+| Database | MongoDB |
+| Testing | Mocha, Chai |
+| Version Control | Git, GitHub |
+| Deployment | Render |
 
-User
-* id (string)
-* name (string)
-* email (string)
-* password (string)
-* favs (array de Product.id)
+## 🗃️ Data Model
 
-Order
-* id (string)
-* User.id (string)
-* products (array de Product.id y quantity)
-* date (Date)
+The application is organised around four main entities:
 
-Product
-* id (string)
-* name (string) 
-* description (string)
-* image (string)
-* price (number)
-* type (string)
+- **User:** stores account information and favourite products.
+- **Product:** contains product details, descriptions, images, prices and categories.
+- **Order:** stores purchased products, quantities and order information.
+- **Recipe:** contains DIY cosmetic recipes and their associated ingredients.
 
-Recipe
-* id (string)
-* name (string)
-* description (string)
-* image (string)
-* products (array de Product.id)
-* type (string)
+## 🚀 Running the Project Locally
 
+Clone the repository:
 
+```bash
+git clone https://github.com/IsaDScmd/Maketics-Shop.git
+```
 
+Install the required dependencies and configure the environment variables for the frontend and backend.
 
-Technologies using JavaScript as a programming language;
-- Frontend: HTML | CSS | React
-- Backend: Node.js | Express
-- Database: MongoDB
-- Testing: Mocha y Chai
+Start the development servers using the scripts defined in their respective `package.json` files.
+
+A MongoDB connection is required for the backend.
+
+## 🔮 Future Improvements
+
+The following features are planned for future versions:
+
+- User profile management.
+- Password and email updates.
+- Product reviews and ratings.
+- Further improvements to the user experience and interface.
+
+## 👩‍💻 About the Project
+
+Maketics Shop was developed as a full-stack web development project, combining frontend development, backend APIs, database management and e-commerce functionality.
+
+The project demonstrates practical experience building an application with the MERN stack, managing application state and connecting a React frontend to a Node.js backend and MongoDB database.
+
+---
+
+**Developed by [IsaDScmd](https://github.com/IsaDScmd)**
+
+[View the live application](https://maketics-shop-frontend.onrender.com) · [GitHub Repository](https://github.com/IsaDScmd/Maketics-Shop)
